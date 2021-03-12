@@ -9,8 +9,9 @@ function dropDown() {
 
 
     allnavLink.hover(function(e) {
-        $(this).next().toggleClass("active")
-        console.log(e);
-
+        allDrpDwn.removeClass("active")
+        if (!$(this).next().hasClass("active")) {
+            $(this).next().addClass("active")
+        }
     });
 }

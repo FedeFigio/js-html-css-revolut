@@ -50,12 +50,13 @@
             
             .drp-dwn {
                 display: flex;
-                background-color: rebeccapurple;
                 /* padding: 10px; */
                 position: absolute;
                 left: -10px;
                 top: 40px;
                 display: none;
+                border-radius: 10px;
+                box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px, rgb(0 0 0 / 8%) 0px 8px 16px 0px;
             }
             
             .drp-dwn ul {
@@ -95,5 +96,5 @@
             }
             
             .active {
-                display: block;
+                display: flex;
             }
