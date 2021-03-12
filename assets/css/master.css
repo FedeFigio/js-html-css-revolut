@@ -1,0 +1,99 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                list-style: none;
+                text-decoration: none;
+                color: #C2C5C7;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            nav svg {
+                margin-right: 30px;
+            }
+            
+            nav {
+                display: flex;
+                justify-content: center;
+                padding: 40px 0;
+            }
+            
+            .container {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .nav-left,
+            .nav-right,
+            .nav-right ul,
+            .nav-left ul {
+                display: flex;
+            }
+            
+            .nav-right ul li,
+            .nav-left ul li {
+                padding: 0 15px;
+                position: relative;
+            }
+            
+            .nav-right ul li a:hover,
+            .nav-left ul li a:hover {
+                color: rgb(58, 58, 58);
+            }
+            
+            .nav-right ul li a:focus,
+            .nav-left ul li a:focus {
+                color: rgb(58, 58, 58);
+                font-weight: bold;
+            }
+            
+            .drp-dwn {
+                display: flex;
+                background-color: rebeccapurple;
+                /* padding: 10px; */
+                position: absolute;
+                left: -10px;
+                top: 40px;
+                display: none;
+            }
+            
+            .drp-dwn ul {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .drp-dwn ul li {
+                padding: 20px;
+            }
+            /* buttons */
+            
+            .btn {
+                font-weight: bold;
+                padding: 15px 30px;
+                border-radius: 13px;
+            }
+            
+            .btn-dark {
+                background-color: rgb(29, 29, 29);
+                color: white;
+            }
+            
+            .btn-white {
+                background-color: #C2C5C755;
+                color: rgb(29, 29, 29);
+            }
+            
+            a.btn-dark:hover {
+                background-color: rgba(29, 29, 29, .8);
+                color: white;
+            }
+            
+            .btn-white:hover {
+                background-color: #C2C5C777;
+                color: rgb(29, 29, 29);
+            }
+            
+            .active {
+                display: block;
+            }
