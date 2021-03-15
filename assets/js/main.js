@@ -5,13 +5,16 @@ $(document).ready(function() {
 
 function dropDown() {
     var allDrpDwn = $("nav .drp-dwn")
-    var allnavLink = $("nav a")
+    var allnavLink = $(".nav-right > ul >li>a")
 
 
-    allnavLink.hover(function(e) {
-        allDrpDwn.removeClass("active")
-        if (!$(this).next().hasClass("active")) {
-            $(this).next().addClass("active")
-        }
+    allnavLink.mouseover(function(e) {
+        allDrpDwn.removeClass("active");
+        $(this).next().addClass("active");
     });
-}
+    $(document).click(function(e) {
+        allDrpDwn.removeClass("active");
+    });
+
+
+};

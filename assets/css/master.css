@@ -22,6 +22,7 @@
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
             
             .nav-left,
@@ -29,6 +30,7 @@
             .nav-right ul,
             .nav-left ul {
                 display: flex;
+                align-items: center;
             }
             
             .nav-right ul li,
@@ -71,7 +73,7 @@
             
             .btn {
                 font-weight: bold;
-                padding: 15px 30px;
+                padding: 15px 30px !important;
                 border-radius: 13px;
             }
             
@@ -87,7 +89,7 @@
             
             a.btn-dark:hover {
                 background-color: rgba(29, 29, 29, .8);
-                color: white;
+                color: white !important;
             }
             
             .btn-white:hover {
